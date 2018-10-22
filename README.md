@@ -1,6 +1,6 @@
 # Angular Core Workshop
 
-We are going to use the Angular CLI and NRWL Extensions extensively in the workshop to streamline development and free us to focus on core concepts.
+We are going to use the Angular CLI and NRWL Extensions extensively in the workshop to streamline development and free us up to focus on core concepts.
 
 Follow the steps below to get started!
 
