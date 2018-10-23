@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { UiLoginModule } from '@workshop/ui-login';
 import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
@@ -18,6 +19,7 @@ import { ProjectsModule } from './projects/projects.module';
     BrowserModule,
     NxModule.forRoot(),
     BrowserAnimationsModule,
+    HttpClientModule,
     MaterialModule,
     UiLoginModule,
     AppRoutingModule,

@@ -94,7 +94,7 @@
   "projects": [
     {
       "id": "1",
-      "title": "Project One",
+      "title": "Project HOLLA!",
       "details": "This is a sample project",
       "percentComplete": 20,
       "approved": false,
@@ -113,28 +113,6 @@
       "targetDate": null,
       "completionDate": null,
       "customerId": "3"
-    },
-    {
-      "id": "3",
-      "title": "Project Three",
-      "details": "This is a sample project",
-      "percentComplete": 60,
-      "approved": false,
-      "startDate": null,
-      "targetDate": null,
-      "completionDate": null,
-      "customerId": "7"
-    },
-    {
-      "id": "5",
-      "title": "Project Five",
-      "details": "This is a sample project",
-      "percentComplete": 100,
-      "approved": true,
-      "startDate": null,
-      "targetDate": "2018-10-26T07:00:00.000Z",
-      "completionDate": null,
-      "customerId": "1"
     }
   ]
 }

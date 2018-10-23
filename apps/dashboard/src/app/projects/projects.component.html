@@ -10,14 +10,15 @@
       <mat-card-content>
         <mat-list>
           <mat-list-item (click)="selectProject(project)"
-            *ngFor="let project of projects">
+            *ngFor="let project of projects$ | async">
             <h3 [style.color]="primaryColor"  mat-line>
               {{project.title}}
             </h3>
             <p mat-line>
               {{project.details}}
             </p>
-            <button mat-icon-button>
+            <button mat-icon-button
+              (click)="deleteProject(project);$event.stopImmediatePropagation()">
               <mat-icon>close</mat-icon>
             </button>
           </mat-list-item>
