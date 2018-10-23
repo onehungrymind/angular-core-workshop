@@ -108,11 +108,18 @@
       "title": "Project Two",
       "details": "This is a sample project",
       "percentComplete": 40,
-      "approved": false,
+      "approved": true,
       "startDate": null,
       "targetDate": null,
       "completionDate": null,
       "customerId": "3"
+    },
+    {
+      "id": "NaLriMg",
+      "title": "TEST Project!",
+      "details": "TEST",
+      "percentComplete": 89,
+      "approved": true
     }
   ]
 }
