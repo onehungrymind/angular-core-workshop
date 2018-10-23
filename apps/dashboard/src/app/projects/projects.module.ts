@@ -5,6 +5,8 @@ import { CommonModule } from '@angular/common';
 import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectsComponent } from './projects.component';
 import { FormsModule } from '@angular/forms';
+import { ProjectsListComponent } from './projects-list/projects-list.component';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
 
 @NgModule({
   imports: [
@@ -13,7 +15,11 @@ import { FormsModule } from '@angular/forms';
     MaterialModule,
     FormsModule
   ],
-  declarations: [ProjectsComponent],
+  declarations: [
+    ProjectsComponent,
+    ProjectsListComponent,
+    ProjectDetailsComponent
+  ],
   exports: [ProjectsComponent]
 })
 export class ProjectsModule { }

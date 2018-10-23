@@ -11,8 +11,6 @@ export class ProjectsComponent implements OnInit {
   projects$;
   selectedProject: Project;
 
-
-
   constructor(private projectsService: ProjectsService) {
   }
 
