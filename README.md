@@ -23,13 +23,7 @@ npm install -g @nrwl/schematics
 After installing it you can create a new Nx workspace by running:
 
 ```
-ng new myworkspacename --collection=@nrwl/schematics
-```
-
-You can also add Nx capabilities to an existing CLI project by running:
-
-```
-ng add @nrwl/schematics
+create-nx-workspace angular-core-workshop
 ```
 
 You are good to go!
