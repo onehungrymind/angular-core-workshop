@@ -16,6 +16,9 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@workshop/material": [
+        "libs/material/src/index.ts"
+      ]
     }
   },
   "exclude": [
