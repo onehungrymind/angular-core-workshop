@@ -1,3 +1,4 @@
+import { MaterialModule } from '@workshop/material';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -7,8 +8,10 @@ import { ProjectsComponent } from './projects.component';
 @NgModule({
   imports: [
     CommonModule,
-    ProjectsRoutingModule
+    ProjectsRoutingModule,
+    MaterialModule
   ],
-  declarations: [ProjectsComponent]
+  declarations: [ProjectsComponent],
+  exports: [ProjectsComponent]
 })
 export class ProjectsModule { }

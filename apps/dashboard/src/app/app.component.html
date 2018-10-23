@@ -1,2 +1,35 @@
-<app-home></app-home>
-<router-outlet></router-outlet>
+<mat-toolbar color="primary" class="mat-elevation-z4">
+  <span>
+    <button mat-mini-fab (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="logo">
+      <img src="assets/logo.png" alt="Logo">
+    </span>
+    <span class="title">
+      {{title}}
+    </span>
+  </span>
+  <span class="spacer"></span>
+  <button class="login" mat-mini-fab>
+    <mat-icon>person</mat-icon>
+  </button>
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="side" opened class="app-sidenav">
+    <nav>
+      <a mat-button class="nav-link">
+        <mat-icon>
+        <!-- LINK ICON -->
+        </mat-icon>
+        <!-- LINK LABEL -->
+      </a>
+    </nav>
+  </mat-sidenav>
+
+  <div class="app-content">
+    <app-projects></app-projects>
+    <router-outlet></router-outlet>
+  </div>
+</mat-sidenav-container>
