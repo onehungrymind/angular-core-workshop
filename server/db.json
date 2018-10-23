@@ -1,0 +1,140 @@
+{
+  "customers": [
+    {
+      "id": "1",
+      "firstName": "Jonathan",
+      "lastName": "Garvey",
+      "email": "jon@gmail.coms",
+      "phone": "1234567890",
+      "title": "Technical Lead",
+      "status": 1
+    },
+    {
+      "id": "2",
+      "firstName": "Bob",
+      "lastName": "Jones",
+      "email": "bob@bobjones.com",
+      "phone": "9372932391",
+      "title": "CEO",
+      "status": 2
+    },
+    {
+      "id": "3",
+      "firstName": "Lukas",
+      "lastName": "Ruebbelke",
+      "email": "hey.player@gmail.com",
+      "phone": "9876543212",
+      "title": "CEO",
+      "status": 1
+    },
+    {
+      "id": "4",
+      "firstName": "Sally",
+      "lastName": "McBride",
+      "email": "silly.sally@hotmail.com",
+      "phone": "3252352531",
+      "title": "Receptionist",
+      "status": 3
+    },
+    {
+      "id": "5",
+      "firstName": "Donna",
+      "lastName": "Barkley",
+      "email": "donnab@aol.com",
+      "phone": "0192837475",
+      "title": "Student",
+      "status": 4
+    },
+    {
+      "id": "6",
+      "firstName": "Larry",
+      "lastName": "Fitzgerald",
+      "email": "super.secret@gmail.com",
+      "phone": "1234432122",
+      "title": "Quarterback",
+      "status": 4
+    },
+    {
+      "id": "7",
+      "firstName": "Victor",
+      "lastName": "Wooten",
+      "email": "w00t@victor.com",
+      "phone": "1888333992",
+      "title": "Bassist",
+      "status": 1
+    },
+    {
+      "id": "8",
+      "firstName": "Chris",
+      "lastName": "Take",
+      "email": "crispy@gmail.com",
+      "phone": "9927381924",
+      "title": "Developer",
+      "status": 1
+    },
+    {
+      "id": "9",
+      "firstName": "Christian",
+      "lastName": "Peterson",
+      "email": "cp3@lol.com",
+      "phone": "0099831234",
+      "title": "Handyman",
+      "status": 3
+    },
+    {
+      "id": "10",
+      "firstName": "RIP",
+      "lastName": "Stick",
+      "email": "r.i.p@deadly.com",
+      "phone": "6123512311",
+      "title": "Grim Reaper",
+      "status": 2
+    }
+  ],
+  "projects": [
+    {
+      "id": "1",
+      "title": "Project One",
+      "details": "This is a sample project",
+      "percentComplete": 20,
+      "approved": false,
+      "startDate": null,
+      "targetDate": null,
+      "completionDate": null,
+      "customerId": "1"
+    },
+    {
+      "id": "2",
+      "title": "Project Two",
+      "details": "This is a sample project",
+      "percentComplete": 40,
+      "approved": false,
+      "startDate": null,
+      "targetDate": null,
+      "completionDate": null,
+      "customerId": "3"
+    },
+    {
+      "id": "3",
+      "title": "Project Three",
+      "details": "This is a sample project",
+      "percentComplete": 60,
+      "approved": false,
+      "startDate": null,
+      "targetDate": null,
+      "completionDate": null,
+      "customerId": "7"
+    },
+    {
+      "id": "5",
+      "title": "Project Five",
+      "details": "This is a sample project",
+      "percentComplete": 100,
+      "approved": true,
+      "startDate": null,
+      "targetDate": "2018-10-26T07:00:00.000Z",
+      "completionDate": null,
+      "customerId": "1"
+    }
+  ]
+}
