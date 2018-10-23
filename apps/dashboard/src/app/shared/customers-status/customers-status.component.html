@@ -1,0 +1,9 @@
+<div class="grid-container">
+  <h1 class="header">Customer Status Report</h1>
+  <mat-grid-list cols="4" rowHeight="225">
+    <mat-grid-tile colspan="1" rowspan="1" *ngFor="let group of customerGroups">
+      <app-customer-group-status [group]="group">
+      </app-customer-group-status>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

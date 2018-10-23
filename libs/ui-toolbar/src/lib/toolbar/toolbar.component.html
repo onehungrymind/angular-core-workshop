@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="mat-elevation-z4">
+  <span>
+    <button *ngIf="isLoggedIn" (click)="sidenav.toggle()" mat-mini-fab>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="logo">
+      <img src="assets/logo.png" alt="Logo">
+    </span>
+    <span class="title">
+      {{title}}
+    </span>
+  </span>
+  <span class="spacer"></span>
+  <button *ngIf="isLoggedIn" class="login" (click)="logout.emit($event)" mat-mini-fab>
+    <mat-icon>person</mat-icon>
+  </button>
+</mat-toolbar>

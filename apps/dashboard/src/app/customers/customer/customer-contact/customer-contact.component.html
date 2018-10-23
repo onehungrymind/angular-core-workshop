@@ -1,0 +1,23 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      <h1>Contact</h1>
+    </mat-card-title>
+  </mat-card-header>
+  <form [formGroup]="form" (submit)="sendMessage(form)">
+    <mat-card-content>
+      <mat-form-field>
+        <label for="subject">Subject</label>
+        <input matInput formControlName="subject" id="subject" name="subject">
+      </mat-form-field>
+      <mat-form-field>
+        <label for="message">Message</label>
+        <textarea matInput formControlName="message" id="message" name="message"></textarea>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button type="submit" mat-button color="primary">Send</button>
+      <button type="button" mat-button (click)="cancel(form)">Cancel</button>
+    </mat-card-actions>
+  </form>
+</mat-card>

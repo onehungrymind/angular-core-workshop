@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-header>
+      <mat-card-title>
+        <h1>Projects</h1>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-list [@listAnimation]="prepareListState()" [@.disabled]="animationsDisabled">
+        <mat-list-item *ngFor="let project of projects; trackBy: trackProject" (click)="selected.emit(project)" class="record">
+          <h3 mat-line>{{project.title}}</h3>
+          <p mat-line>
+            {{project.details}}
+          </p>
+          <button *ngIf="!readonly" mat-icon-button (click)="deleted.emit(project);$event.stopImmediatePropagation();">
+            <mat-icon>close</mat-icon>
+          </button>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+  </mat-card>

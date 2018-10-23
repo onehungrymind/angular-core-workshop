@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="col-50">
+    <app-projects-list
+      [projects]="projects$ | async"
+      (selected)="selectProject($event)"
+      (deleted)="deleteProject($event)">
+    </app-projects-list>
+  </div>
+
+  <div class="col-50">
+    <app-project-details
+      [project]="currentProject"
+      [customers]="customers$ | async"
+      (saved)="saveProject($event)"
+      (cancelled)="resetCurrentProject($event)">
+    </app-project-details>
+  </div>
+</div>

@@ -1,0 +1,8 @@
+<app-customers-status
+  [customers]="customers$ | async">
+</app-customers-status>
+
+<app-customers-list
+  [customers]="customers$ | async"
+  (selected)="selectCustomer($event)">
+</app-customers-list>

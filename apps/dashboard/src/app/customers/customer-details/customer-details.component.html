@@ -1,0 +1,62 @@
+<mat-card class="details-container" *ngIf="currentCustomer">
+  <mat-card-header>
+    <mat-card-title>
+      <h1>{{customerName}}</h1>
+    </mat-card-title>
+    <mat-button-toggle-group>
+      <mat-button-toggle routerLinkActive="mat-button-toggle-checked" routerLink="projects">
+        Projects
+      </mat-button-toggle>
+      <mat-button-toggle routerLinkActive="mat-button-toggle-checked" routerLink="contact">
+        Contact
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+  </mat-card-header>
+  <form [formGroup]="form" (submit)="save(form)">
+    <mat-card-content>
+      <mat-form-field>
+        <label for="firstName">First Name</label>
+        <input matInput formControlName="firstName" id="firstName" name="firstName">
+        <mat-error *ngIf="form.get('firstName').hasError('required')">
+          First Name is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <label for="lastName">Last Name</label>
+        <input matInput formControlName="lastName" id="lastName" name="lastName">
+        <mat-error *ngIf="form.get('lastName').hasError('required')">
+          Last Name is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <label for="email">Email</label>
+        <input type="email" matInput formControlName="email" id="email" name="email">
+        <mat-error *ngIf="form.get('email').hasError('email') && !form.get('email').hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="form.get('email').hasError('required')">
+          Email is <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <label for="phone">Phone</label>
+        <input matInput formControlName="phone" id="phone" name="phone">
+      </mat-form-field>
+      <mat-form-field>
+        <label for="title">Job Title</label>
+        <input matInput formControlName="title" id="title" name="title">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-select placeholder="Status" formControlName="status" id="status" name="status">
+          <mat-option *ngFor="let status of statuses" [value]="status.id">
+            {{status.name}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button type="submit" mat-button color="primary">Save</button>
+      <button type="button" mat-button (click)="cancel()">Cancel</button>
+    </mat-card-actions>
+  </form>
+</mat-card>
