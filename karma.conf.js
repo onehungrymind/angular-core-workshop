@@ -27,8 +27,8 @@ module.exports = () => {
     port: 9876,
     colors: true,
     logLevel: constants.LOG_INFO,
-    autoWatch: false,
+    autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: true
+    singleRun: false
   };
 };
