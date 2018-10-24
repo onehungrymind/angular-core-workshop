@@ -5,13 +5,18 @@ import { ProjectsRoutingModule } from './projects-routing.module';
 import { ProjectsComponent } from './projects.component';
 import { ProjectsListComponent } from './projects-list/projects-list.component';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
-import { SharedModule } from '../shared/shared.module';
+import { MaterialModule } from '@workshop/material';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { CoreDataModule } from '@workshop/core-data';
 
 @NgModule({
   imports: [
     CommonModule,
     ProjectsRoutingModule,
-    SharedModule
+    MaterialModule,
+    ReactiveFormsModule,
+    FormsModule,
+    CoreDataModule
   ],
   declarations: [
     ProjectsComponent,

@@ -17,8 +17,6 @@ export class AppComponent implements OnInit {
   isLoggedIn$: Observable<boolean> = this.authService.isAuthenticated$;
 
   links = [
-    { path: '/home', icon: 'home', label: 'Home' },
-    { path: '/customers', icon: 'face', label: 'Customers' },
     { path: '/projects', icon: 'work', label: 'Projects' }
   ];
 

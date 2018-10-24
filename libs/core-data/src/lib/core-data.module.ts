@@ -5,11 +5,10 @@ import { NgModule } from '@angular/core';
 
 import { AuthService } from './auth/auth.service';
 import { TokenInterceptor } from './auth/token.interceptor';
-import { CustomersService } from './customers/customers.service';
 import { NotificationsService } from './notifications/notifications.service';
 import { ProjectsService } from './projects/projects.service';
-import { StatusPipe } from './status/status.pipe';
 import { ErrorInterceptor } from './error/error.interceptor';
+import { CustomersService } from './customers/customers.service';
 
 export function tokenGetter() {
   return localStorage.getItem('access_token');
@@ -19,8 +18,8 @@ export function tokenGetter() {
   providers: [
     AuthService,
     AuthGuardService,
-    CustomersService,
     NotificationsService,
+    CustomersService,
     ProjectsService,
     {
       provide: HTTP_INTERCEPTORS,
@@ -33,8 +32,6 @@ export function tokenGetter() {
       multi: true
     }
   ],
-  declarations: [StatusPipe],
   imports: [CommonModule, HttpClientModule],
-  exports: [StatusPipe]
 })
 export class CoreDataModule {}
