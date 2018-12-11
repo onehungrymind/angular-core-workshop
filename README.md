@@ -4,6 +4,17 @@ We are going to use the Angular CLI and NRWL Extensions extensively in the works
 
 Follow the steps below to get started!
 
+## The Stack
+
+### NRWL Workspace
+A NRWL workspace contains one or all of you Angular projects and libraries. It creates a monorepo for your applications domains. Nx helps add extra layer of tooling that can help manage your enterprise applications.
+
+### Angular Material
+Angular Material is a UI library for Angular that gives you access to a modern material UI that works across web, mobile, and desktop applications with minimal custom CSS and setup.
+
+### JSON Server
+Creates a quick and simple way to mock out a backend REST service. We can then deliver some mocked out data in JSON format to make sure everything is working as expected once our real backend is connected.
+
 ## Getting Started
 
 An Nx workspace is an Angular CLI project that has been enhanced to be enterprise ready. Being an Angular CLI project means it will be handy to have the Angular CLI installed globally, which can be done via npm or yarn as well.
