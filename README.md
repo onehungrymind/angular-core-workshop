@@ -37,4 +37,8 @@ After installing it you can create a new Nx workspace by running:
 create-nx-workspace angular-core-workshop
 ```
 
+Lastly, please install the npm dependencies by running:
+```
+npm install
+```
 You are good to go!
