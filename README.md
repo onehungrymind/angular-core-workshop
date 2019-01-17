@@ -37,6 +37,23 @@ After installing it you can create a new Nx workspace by running:
 create-nx-workspace angular-core-workshop
 ```
 
+The next step is to generate an app in your workspace. Do so by running:
+
+```
+ng generate app dashboard
+```
+
+You'll then be prompted to answer a few setup questions. Run the following for each question:
+
+` In which directory should the application be generated? `   apps
+
+` Would you like to add Angular routing?`  yes
+
+` Which Unit Test Runner would you like to use for the application? `  Karma
+
+` Which E2E Test Runner would you like to use for the application? `  Protractor
+
+
 Lastly, please install the npm dependencies by running:
 ```
 npm install
