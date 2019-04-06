@@ -39,6 +39,8 @@ After installing, if you want to create a new Nx workspace, you can by running:
 create-nx-workspace angular-core-workshop
 ```
 
+**NOTE: If you start from the `01-getting-started` branch, the above command was already ran and was used to generate the starting respository.**
+
 The next step is to generate an app in your workspace. Do so by running:
 
 ```
