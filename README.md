@@ -33,7 +33,7 @@ After you have installed the Angular CLI, install `@nrwl/schematics`.
 npm install -g @nrwl/schematics
 ```
 
-After installing it you can create a new Nx workspace by running:
+After installing, if you want to create a new Nx workspace, you can by running:
 
 ```
 create-nx-workspace angular-core-workshop
@@ -47,14 +47,18 @@ ng generate app dashboard
 
 You'll then be prompted to answer a few setup questions. Run the following for each question:
 
+
 ` In which directory should the application be generated? `   apps
 
-` Would you like to add Angular routing?`  yes
+` Would you like to add Angular routing?`  y
+
+` Which stylesheet format would you like to use?` y
 
 ` Which Unit Test Runner would you like to use for the application? `  Karma
 
 ` Which E2E Test Runner would you like to use for the application? `  Protractor
 
+` Which tags would you like to add to the application? (used for linting)`
 
 Lastly, please install the npm dependencies by running:
 ```
