@@ -36,8 +36,10 @@ npm install -g @nrwl/schematics
 After installing, if you want to create a new Nx workspace, you can by running:
 
 ```
-create-nx-workspace angular-core-workshop
+npx create-nx-workspace angular-core-workshop
 ```
+
+> NOTE: refer to https://nx.dev/web/getting-started/getting-started on how to get up and running quickly with an Nx workspace.
 
 **NOTE: If you start from the `01-getting-started` branch, the above command was already ran and was used to generate the starting respository.**
 
