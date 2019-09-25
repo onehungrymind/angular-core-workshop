@@ -7,32 +7,18 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
-    "typeRoots": [
-      "node_modules/@types"
-    ],
-    "lib": [
-      "es2017",
-      "dom"
-    ],
+    "target": "es2015",
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["es2017", "dom"],
     "baseUrl": ".",
     "paths": {
-      "@workshop/material": [
-        "libs/material/src/index.ts"
-      ],
-      "@workshop/core-data": [
-        "libs/core-data/src/index.ts"
-      ],
-      "@workshop/ui-login": [
-        "libs/ui-login/src/index.ts"
-      ],
-      "@workshop/ui-toolbar": [
-        "libs/ui-toolbar/src/index.ts"
-      ]
-    }
+      "@workshop/material": ["libs/material/src/index.ts"],
+      "@workshop/core-data": ["libs/core-data/src/index.ts"],
+      "@workshop/ui-login": ["libs/ui-login/src/index.ts"],
+      "@workshop/ui-toolbar": ["libs/ui-toolbar/src/index.ts"]
+    },
+    "module": "esnext",
+    "rootDir": "."
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }

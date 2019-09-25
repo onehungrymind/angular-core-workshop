@@ -20,7 +20,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     MaterialModule,
     UiLoginModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
