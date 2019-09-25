@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NxModule } from '@nrwl/nx';
+import { NxModule } from '@nrwl/angular';
 import { MaterialModule } from '@workshop/material';
 import { UiLoginModule } from '@workshop/ui-login';
 
@@ -20,7 +20,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     MaterialModule,
     UiLoginModule,
-    AppRoutingModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
