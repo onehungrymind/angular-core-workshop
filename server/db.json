@@ -93,19 +93,30 @@
   ],
   "projects": [
     {
-      "id": "1",
-      "title": "Project HOLLA!",
+      "id": "2",
+      "title": "Project Two",
       "details": "This is a sample project",
-      "percentComplete": 20,
-      "approved": false,
+      "percentComplete": 40,
+      "approved": true,
       "startDate": null,
       "targetDate": null,
       "completionDate": null,
-      "customerId": "1"
+      "customerId": "3"
     },
     {
-      "id": "2",
-      "title": "Project Two",
+      "id": "4",
+      "title": "Project FOUR",
+      "details": "This is a sample project",
+      "percentComplete": 40,
+      "approved": true,
+      "startDate": null,
+      "targetDate": null,
+      "completionDate": null,
+      "customerId": "3"
+    },
+    {
+      "id": "5",
+      "title": "Project FIVE",
       "details": "This is a sample project",
       "percentComplete": 40,
       "approved": true,
@@ -120,6 +131,167 @@
       "details": "TEST",
       "percentComplete": 89,
       "approved": true
+    },
+    {
+      "id": "pOGNB4L",
+      "title": "Cypress Test",
+      "details": "I am running an automated test using Cypress. This is really cool!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "dtE1YaJ",
+      "title": "Cypress TestCypress Test",
+      "details": "I am running an automated test using Cypress. This is really cool!This is my update to my automated test!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "dbtWO7O",
+      "title": "Cypress TestCypress Test",
+      "details": "I am running an automated test using Cypress. This is really cool!This is my update to my automated test!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "dZ4NxOP",
+      "title": "Cypress Test",
+      "details": "I am running an automated test using Cypress. This is really cool!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "0mK1lfg",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "DS8UYSm",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "PYy3Wk0",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "L8Ooy95",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "BVIWThz",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "mpKBDSL",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "g7jMBdu",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "1V1F9fV",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "-wOYCXw",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "IV-RDgP",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "P7K48Ky",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "aIDsCOu",
+      "title": "Cypress Test",
+      "details": "I am running an automated test using Cypress. This is really cool!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "6iyIbTD",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "HxMfbqz",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "8zIaYfK",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "bebVBRK",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "ENyohLH",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "5my01wy",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
+    },
+    {
+      "id": "xYhyL50",
+      "title": "Cypress Updated Title",
+      "details": "This is my update to my comments field!",
+      "percentComplete": 0,
+      "approved": false
     }
   ]
 }
