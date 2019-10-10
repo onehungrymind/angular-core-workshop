@@ -5,17 +5,18 @@
     </mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <mat-list>
+    <mat-list data-test-id="project-list">
       <mat-list-item
-        *ngFor="let project of projects"
-        (click)="selected.emit(project)">
+        *ngFor="let project of projects; let id=index"
+        (click)="selected.emit(project)"
+        attr.data-test-id="project-{{id}}" [attr.data-title]="project.title">
         <h3 mat-line>
           {{project.title}}
         </h3>
         <p mat-line>
           {{project.details}}
         </p>
-        <button *ngIf="!readonly" mat-icon-button
+        <button *ngIf="!readonly" mat-icon-button attr.data-test-id="project-{{id}}-delete-btn" attr.data-cy="{{id}}"
           (click)="deleted.emit(project);$event.stopImmediatePropagation();">
           <mat-icon>close</mat-icon>
         </button>

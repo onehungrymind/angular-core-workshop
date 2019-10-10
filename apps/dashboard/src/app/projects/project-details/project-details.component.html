@@ -10,10 +10,10 @@
   <form (submit)="saved.emit(currentProject)">
     <mat-card-content>
       <mat-form-field class="full-width">
-        <input matInput placeholder="Title" [(ngModel)]="currentProject.title" type="text" name="title">
+        <input matInput placeholder="Title" data-test-id="title" [(ngModel)]="currentProject.title" type="text" name="title">
       </mat-form-field>
       <mat-form-field class="full-width">
-        <textarea matInput placeholder="Details" [(ngModel)]="currentProject.details" type="text" name="details"></textarea>
+        <textarea matInput placeholder="Details" data-test-id="details" [(ngModel)]="currentProject.details" type="text" name="details"></textarea>
       </mat-form-field>
       <section class="full-width">
         <h4>{{currentProject.percentComplete}}% Complete</h4>
@@ -27,7 +27,7 @@
       </section>
     </mat-card-content>
     <mat-card-actions>
-      <button type="submit" mat-button color="primary">Save</button>
+      <button type="submit" data-test-id="save-button" mat-button color="primary">Save</button>
       <button type="button" mat-button (click)="cancelled.emit(currentProject)">Cancel</button>
     </mat-card-actions>
   </form>
