@@ -10,42 +10,8 @@ body {
     display: flex;
 }
 
-md-toolbar-row {
-    justify-content: space-between;
-}
-
 p {
     margin: 16px;
-}
-
-[md-raised-button] {
-    width: 100%;
-}
-
-md-grid-list {
-    max-width: 1403px;
-    margin: 16px;
-}
-
-md-sidenav-layout {
-    height: 100vh;
-}
-
-md-sidenav {
-    width: 200px;
-}
-
-md-sidenav a {
-    box-sizing: border-box;
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 47px;
-    text-decoration: none;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    padding: 0 16px;
-    position: relative;
 }
 
 .icon-20 {
@@ -68,13 +34,9 @@ md-sidenav a {
     flex: 1;
 }
 
-md-card-header .mat-card-header-text {
-    margin-left: 0;
-    border-bottom: 1px solid #ffd740;
-}
-
-md-card-title h1 {
-    display: inline;
+.mat-card-header-text {
+  margin-left: 0;
+  border-bottom: 1px solid #ffd740;
 }
 
 .header {
