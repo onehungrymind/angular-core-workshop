@@ -4,6 +4,8 @@ We are going to use the Angular CLI and NRWL Extensions extensively in the works
 
 Follow the steps below to get started!
 
+> NOTE: If you start from the `01-getting-started` branch, the workspace and app is already generated with the correct npm scope set.
+
 ## The Stack
 
 ### NRWL Workspace
@@ -33,39 +35,45 @@ After you have installed the Angular CLI, install `@nrwl/schematics`.
 npm install -g @nrwl/schematics
 ```
 
-After installing, if you want to create a new Nx workspace, you can by running:
+After installing, if you want to create a new Nx workspace with an application, you can by running:
 
 ```
-npx create-nx-workspace angular-core-workshop
+create-nx-workspace angular-core-workshop --preset=empty --cli=angular --npmScope=workshop
 ```
 
-> NOTE: refer to https://nx.dev/web/getting-started/getting-started on how to get up and running quickly with an Nx workspace.
+> NOTE: because the @nrwl/schematics have been installed the above command works, if you have issues with this command not working properly or would rather not install the Nrwl shcematics globally please refer to https://nx.dev/web/getting-started/getting-started for further instruction.
 
-**NOTE: If you start from the `01-getting-started` branch, the above command was already ran and was used to generate the starting respository.**
+After the workspace is created you will need to cd into the app directory `cd angular-core-workshop` and install the Nrwl Angular schematic:
+
+```
+ng add @nrwl/angular
+```
 
 The next step is to generate an app in your workspace. Do so by running:
 
 ```
-ng generate app dashboard
+ng generate @nrwl/angular:application dashboard
 ```
 
 You'll then be prompted to answer a few setup questions. Run the following for each question:
 
+`Which stylesheet format would you like to use?` SASS(.scss)
 
-` In which directory should the application be generated? `   apps
-
-` Would you like to add Angular routing?`  y
-
-` Which stylesheet format would you like to use?` y
-
-` Which Unit Test Runner would you like to use for the application? `  Karma
-
-` Which E2E Test Runner would you like to use for the application? `  Protractor
-
-` Which tags would you like to add to the application? (used for linting)`
+`Would you like to configure routing for this application?` y
 
 Lastly, please install the npm dependencies by running:
+
 ```
 npm install
 ```
+Then run the application:
+
+```
+npm run start
+```
+
+Navigate to `localhost:4200` and you should see this:
+
+![](RESOURCES/assets/localhost-4200.png)
+
 You are good to go!
