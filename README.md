@@ -38,10 +38,10 @@ npm install -g @nrwl/schematics
 After installing, if you want to create a new Nx workspace with an application, you can by running:
 
 ```
-create-nx-workspace angular-core-workshop --preset=empty --cli=angular --npmScope=workshop
+npx create-nx-workspace angular-core-workshop --preset=empty --cli=angular --npmScope=workshop
 ```
 
-> NOTE: because the @nrwl/schematics have been installed the above command works, if you have issues with this command not working properly or would rather not install the Nrwl shcematics globally please refer to https://nx.dev/web/getting-started/getting-started for further instruction.
+> NOTE: because the @nrwl/schematics have been installed the above command works, if you have issues with this command not working properly or would rather not install the Nrwl schematics globally please refer to https://nx.dev/web/getting-started/getting-started for further instruction.
 
 After the workspace is created you will need to cd into the app directory `cd angular-core-workshop` and install the Nrwl Angular schematic:
 
